@@ -32,12 +32,14 @@ def plot_pie(data_pair, title, label_format):
     return pie
 
 
-def plot_multiple_line(x_axis, y_axis_dict, title, double_ylabel_str,double_ylabel = False,ylabel_smooth = False):
+
+def plot_multiple_line(x_axis, y_axis_dict, title, double_ylabel_str,double_ylabel = False,ylabel_smooth = False,is_show = True):
+    # 由于全部展示图例时数字太多影响效果，is_show用于控制是否展示或者都不展示
     line = Line()
     line.add_xaxis(x_axis)
     for _name in y_axis_dict.keys():
         if _name != double_ylabel_str:
-            line.add_yaxis(_name,y_axis_dict[_name])
+            line.add_yaxis(_name,y_axis_dict[_name],label_opts=opts.LabelOpts(is_show = is_show))
     line.set_global_opts(title_opts=opts.TitleOpts(title=title), toolbox_opts=opts.ToolboxOpts())
     if double_ylabel:
         line.extend_axis(yaxis= opts.AxisOpts(name = double_ylabel_str,

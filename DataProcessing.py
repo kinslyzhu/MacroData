@@ -21,13 +21,13 @@ def plot_line_not_from_wind(df,name_str,var_name):
     return _line
 
 
-def plot_mutiple_line_from_wind(wind_id, name_str, var_name, start_date, end_date):
+def plot_mutiple_line_from_wind(wind_id, name_str, var_name, start_date, end_date,is_show = True):
     _df = get_data_from_wind_mutiple_same_date(wind_id, start_date, end_date, var_name)
     _date_tuple = [i[0] for i in _df.Date.values]
     _data_tuple_dict = dict()
     for _name in var_name:
         _data_tuple_dict[_name] = [i[0] for i in _df[_name].values]
-    _line = plot_multiple_line(_date_tuple, _data_tuple_dict, name_str, 0, double_ylabel=False)
+    _line = plot_multiple_line(_date_tuple, _data_tuple_dict, name_str, 0, double_ylabel=False,is_show = is_show)
 
     return _line
 
