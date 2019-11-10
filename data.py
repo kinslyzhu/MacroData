@@ -2,7 +2,7 @@ import pandas as pd
 from WindPy import *
 import pyecharts.options as opts
 from pyecharts.globals import ThemeType
-from pyecharts.charts import Line, Scatter, Page, Grid, Bar,Pie
+from pyecharts.charts import Line, Scatter, Page, Grid, Bar,Pie,Tab
 import numpy as np
 
 from DataProcessing import plot_line_from_wind,plot_mutiple_line_from_wind,plot_mutiple_line_not_from_wind,plot_line_not_from_wind
@@ -10,6 +10,7 @@ import datetime as dt
 
 from PlotFunction import plot_line,plot_pie
 from GetDataFromWind import get_data_from_wind,get_data_from_wind_mutiple_same_date
+from CreateJsonFile import read_json_to_python,read_json_txt_to_list
 
 w.start()
 
@@ -155,10 +156,35 @@ line_china_credit_spread_1Y_line = plot_mutiple_line_not_from_wind(df_1Y_credit_
 
 ## Economic Activity
 
+
+
 line_china_GDP_NoChange = plot_mutiple_line_from_wind(["M5567889","M5567890","M5567891","M5567892"],"GDP不变价当季值",["GDP","第一产业","第二产业","第三产业"],"2007-01-01",enddate,is_show = False)
 line_china_GDP_yoy = plot_mutiple_line_from_wind(["M0039354","M5567901","M5567902","M5567903"],"GDP不变价同比",["GDP","第一产业","第二产业","第三产业"],"1992-01-01",enddate,is_show = False)
 
-line_china_GDP_industry_yoy = plot_mutiple_line_not_from_wind([])
+json_txt = read_json_to_python("chart_data.json")
+line_china_GDP_multiple_industry_yoy_name,line_china_GDP_multiple_industry_yoy_id,line_china_GDP_multiple_industry_yoy_str = read_json_txt_to_list(json_txt,"GDP_multi_industries_yoy")
+line_china_GDP_multiplie_industry_yoy = plot_mutiple_line_from_wind(line_china_GDP_multiple_industry_yoy_id,line_china_GDP_multiple_industry_yoy_name,line_china_GDP_multiple_industry_yoy_str,"1992-01-01",enddate,is_show=False)
+
+line_industry_production_yoy_name,line_industry_production_yoy_id,line_industry_production_yoy_str = read_json_txt_to_list(json_txt,"Industrial_Production_yoy")
+line_industry_production_yoy = plot_mutiple_line_from_wind(line_industry_production_yoy_id,line_industry_production_yoy_name,line_industry_production_yoy_str,"1992-01-01",enddate,is_show=False)
+
+line_service_industry_yoy_name,line_service_industry_yoy_id,line_service_industry_yoy_str = read_json_txt_to_list(json_txt,"Service_Industry_yoy")
+line_service_industry_yoy = plot_mutiple_line_from_wind(line_service_industry_yoy_id,line_service_industry_yoy_name,line_service_industry_yoy_str,"1992-01-01",enddate)
+
+line_PMI_name,line_PMI_id,line_PMI_str = read_json_txt_to_list(json_txt,"PMI")
+line_PMI = plot_mutiple_line_from_wind(line_PMI_id,line_PMI_name,line_PMI_str,"1992-01-01",enddate,is_show=False)
+
+line_PMI_by_size_name,line_PMI_by_size_id,line_PMI_by_size_str = read_json_txt_to_list(json_txt,"PMI by size")
+line_PMI_by_size = plot_mutiple_line_from_wind(line_PMI_by_size_id,line_PMI_by_size_name,line_PMI_by_size_str,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"PMI Non Manufacturing")
+line_PMI_non_manufacturing = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"PMI by Caixin")
+line_Caixin_PMI = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"PMI NBS vs Caixin")
+line_PMI_NBS_vs_Caixin = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
 
 
 page = (
@@ -167,8 +193,11 @@ page = (
          china_pork_produce_line, china_pork_import_line,china_pork_per_capita_bar,china_pork_number_line,
          china_breading_sows_line, world_pork_import_pie,world_pork_export_pie,line_liquidity_watch,
          line_liquidity_medium_watch,line_liquidity_expectation,line_china_treasury,line_term_spread,line_china_treasury_localgov_spread,line_china_credit_spread_line,line_china_credit_spread_1Y_line,
-         line_china_GDP_NoChange,line_china_GDP_yoy)
+         line_china_GDP_NoChange,line_china_GDP_yoy,line_china_GDP_multiplie_industry_yoy,line_industry_production_yoy,
+         line_service_industry_yoy,line_PMI,line_PMI_by_size,line_PMI_non_manufacturing,line_Caixin_PMI,line_PMI_NBS_vs_Caixin)
 )
+
+
 
 page.render(enddate + ".html")
 
