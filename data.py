@@ -186,6 +186,13 @@ line_Caixin_PMI = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-0
 name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"PMI NBS vs Caixin")
 line_PMI_NBS_vs_Caixin = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
 
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Fixed Asset Investment")
+line_fixed_asset_investment = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Retail Sales of Consumer Goods")
+line_retail_sales_of_consumer_goods = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate)
+
+
 
 page = (
     Page()
@@ -194,7 +201,8 @@ page = (
          china_breading_sows_line, world_pork_import_pie,world_pork_export_pie,line_liquidity_watch,
          line_liquidity_medium_watch,line_liquidity_expectation,line_china_treasury,line_term_spread,line_china_treasury_localgov_spread,line_china_credit_spread_line,line_china_credit_spread_1Y_line,
          line_china_GDP_NoChange,line_china_GDP_yoy,line_china_GDP_multiplie_industry_yoy,line_industry_production_yoy,
-         line_service_industry_yoy,line_PMI,line_PMI_by_size,line_PMI_non_manufacturing,line_Caixin_PMI,line_PMI_NBS_vs_Caixin)
+         line_service_industry_yoy,line_PMI,line_PMI_by_size,line_PMI_non_manufacturing,line_Caixin_PMI,line_PMI_NBS_vs_Caixin,
+         line_fixed_asset_investment,line_retail_sales_of_consumer_goods)
 )
 
 

@@ -88,8 +88,13 @@ Wind_name_list = ["PMI", "财新中国PMI", "中国综合PMI:产出指数", "财
 Total_data["PMI NBS vs Caixin"] = Convert_list_to_pre_json_data("统计局与财新PMI",Wind_id_list,Wind_name_list)
 
 
+Wind_id_list = ["M0000273", "S0029657"]
+Wind_name_list = ["固定资产投资完成额:累计同比", "房地产开发投资完成额:累计同比"]
+Total_data["Fixed Asset Investment"] = Convert_list_to_pre_json_data("固定资产投资",Wind_id_list,Wind_name_list)
 
-
+Wind_id_list = ["M0001428", "M0061657", "M0061658"]
+Wind_name_list = ["社会消费品零售总额:当月同比", "社会消费品零售总额:城镇:当月同比", "社会消费品零售总额:乡村:当月同比"]
+Total_data["Retail Sales of Consumer Goods"] = Convert_list_to_pre_json_data("社会消费品零售总额同比",Wind_id_list,Wind_name_list)
 
 
 
