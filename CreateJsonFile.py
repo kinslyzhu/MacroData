@@ -145,6 +145,215 @@ Wind_name_list = ["工业企业:主营业务收入:累计同比","工业企业:�
 Total_data["Industry Condition"] = Convert_list_to_pre_json_data("工业企业状态",Wind_id_list,Wind_name_list)
 
 
+# 国有企业 vs 民营企业
+
+Wind_id_list = ["M0049819","M0000557"]
+Wind_name_list = ["全国国有企业:利润总额:累计同比","工业企业:利润总额:累计同比"]
+Total_data["Industry Profit"] = Convert_list_to_pre_json_data("工业企业利润",Wind_id_list,Wind_name_list)
+
+# 居民收入
+
+Wind_id_list = ["M0024149","M5405765"]
+Wind_name_list = ["就业人员平均工资:城镇单位:累计同比","农村外出务工劳动力:月均收入:同比"]
+Total_data["Citizen Income"] = Convert_list_to_pre_json_data("居民收入",Wind_id_list,Wind_name_list)
+
+
+Wind_id_list=["M5405764"]
+Wind_name_list = ["农村外出务工劳动力:月均收入"]
+Total_data["Migrant Worker"] = Convert_list_to_pre_json_data("农民工月均收入",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0012989","M0012990"]
+Wind_name_list = ["城镇居民人均可支配收入:累计同比","城镇居民人均可支配收入:实际累计同比"]
+Total_data["Per Capita Disposable Income of Urban Resident"] = Convert_list_to_pre_json_data("城镇居民人均可支配收入",Wind_id_list,Wind_name_list)
+
+
+# 对外贸易
+Wind_id_list = ["M0000605","M0000607","M0000609"]
+Wind_name_list = ["进出口金额:当月同比","出口金额:当月同比","进口金额:当月同比"]
+Total_data["Import and Export Trade"] = Convert_list_to_pre_json_data("进出口金额",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0000610"]
+Wind_name_list = ["贸易差额:当月值"]
+Total_data["Trade Surplus"] = Convert_list_to_pre_json_data("贸易差额",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0007453","M0007454"]
+Wind_name_list = ["工业企业:出口交货值:当月值","工业企业:出口交货值:当月同比"]
+Total_data["Export Goods Value of Industry"] = Convert_list_to_pre_json_data("工业企业出口交货值",Wind_id_list,Wind_name_list)
+
+
+Wind_id_list = ["M5540037","M5540038","M5540039"]
+Wind_name_list = ["国际货物和服务贸易差额:当月值","国际货物和服务贸易贷方:当月值","国际货物和服务贸易借方:当月值"]
+Total_data["International Goods and Service Trade"] = Convert_list_to_pre_json_data("国际货物和服务贸易",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0009870","M5405461"]
+Wind_name_list = ["实际使用外资金额:外商直接投资:当月值","实际使用外资金额:合计:累计同比"]
+Total_data["FDI"]  = Convert_list_to_pre_json_data("FDI",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M7049801","M5200016"]
+Wind_name_list = ["对外全行业直接投资:累计同比","非金融类对外直接投资:累计同比"]
+Total_data["Domestic Direct Investment"] = Convert_list_to_pre_json_data("对外投资",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M5206847","M5206870"]
+Wind_name_list = ["差额:经常项目:当季值","差额:资本和金融项目:当季值"]
+Total_data["Current and Capital Account"] = Convert_list_to_pre_json_data("经常项目与资本项目",Wind_id_list,Wind_name_list)
+
+# 货币与债务
+
+Wind_id_list = ["M0010049"]
+Wind_name_list = ["官方储备资产:外汇储备"]
+Total_data["Foreign Currency Reserve"] = Convert_list_to_pre_json_data("外汇储备",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0010048"]
+Wind_name_list = ["官方储备资产:黄金(以盎司计算的纯金数量)"]
+Total_data["Gold Reserve"] = Convert_list_to_pre_json_data("黄金储备",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0327899"]
+Wind_name_list = ["金融机构:人民币:资金运用:中央银行外汇占款"]
+Total_data["Position for Forex Purchase"] = Convert_list_to_pre_json_data("外汇占款",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0024339"]
+Wind_name_list = ["外债余额"]
+Total_data["Foreign Debt"] = Convert_list_to_pre_json_data("外债余额",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0024342","M0024343"]
+Wind_name_list = ["中长期债务:占外债余额比例","短期债务:占外债余额比例"]
+Total_data["Debt Structure"] = Convert_list_to_pre_json_data("债务比例",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0046169","M0089129","M0089130"]
+Wind_name_list = ["公共财政收入:累计同比","中央财政收入:累计同比","地方本级财政收入:累计同比"]
+Total_data["Growth of Govt Revenue"] = Convert_list_to_pre_json_data("财政收入增速",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0043411"]
+Wind_name_list = ["金融机构:财政存款余额"]
+Total_data["Fiscal Deposit"] = Convert_list_to_pre_json_data("财政存款余额",Wind_id_list,Wind_name_list)
+
+
+Wind_id_list = ["M5658447"]
+Wind_name_list = ["地方政府债务余额"]
+Total_data["Local Govt Debt"] = Convert_list_to_pre_json_data("地方政府债务余额",Wind_id_list,Wind_name_list)
+
+
+Wind_id_list = ["M0001381","M0001383","M0001385"]
+Wind_name_list = ["M0:同比","M1:同比","M2:同比"]
+Total_data["M0 M1 M2"] = Convert_list_to_pre_json_data("货币统计增速",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0001380","M0001382","M0001384"]
+Wind_name_list = ["M0","M1","M2"]
+Total_data["Curreny and Cash"] = Convert_list_to_pre_json_data("货币统计",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0009973","M5206730"]
+Wind_name_list = ["金融机构:新增人民币贷款:当月值","社会融资规模:当月值"]
+Total_data["Financing Scale"] = Convert_list_to_pre_json_data("融资规模",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0061615","M0061614"]
+Wind_name_list = ["公开市场操作:货币投放","公开市场操作:货币净投放"]
+Total_data["Open Market Operation"] = Convert_list_to_pre_json_data("公开市场操作",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M5528818"]
+Wind_name_list = ["中期借贷便利(MLF):投放:当月值"]
+Total_data["MLF Volume"] = Convert_list_to_pre_json_data("MLF Volume",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M5528820","M5543249","M5543248"]
+Wind_name_list = ["中期借贷便利(MLF):利率","中期借贷便利(MLF):利率:1年","中期借贷便利(MLF):利率:6个月"]
+Total_data["MLF Price"] = Convert_list_to_pre_json_data("MLF Price",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M5528821","M5528822"]
+Wind_name_list = ["抵押补充贷款(PSL):提供资金:当月新增","抵押补充贷款(PSL):期末余额"]
+Total_data["PSL"] = Convert_list_to_pre_json_data("PSL",Wind_id_list,Wind_name_list)
+
+# 利率
+
+Wind_id_list = ["M0017146"]
+Wind_name_list = ["7天回购利率:加权平均:最近1周(B1W)"]
+Total_data["Repo"] = Convert_list_to_pre_json_data("7天逆回购",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0017142"]
+Wind_name_list = ["SHIBOR:3个月"]
+Total_data["Shibor"] = Convert_list_to_pre_json_data("Shibor 3M",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0058002","M0058003","M0058004","M0058005"]
+Wind_name_list = ["金融机构人民币贷款加权平均利率","金融机构人民币贷款加权平均利率:一般贷款","金融机构人民币贷款加权平均利率:票据融资","金融机构人民币贷款加权平均利率:个人住房贷款"]
+Total_data["Loan Interest Rate"] = Convert_list_to_pre_json_data("贷款利率",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["S0211686"]
+Wind_name_list = ["7日年化收益率:余额宝(天弘)"]
+Total_data["yuebao"] = Convert_list_to_pre_json_data("余额宝",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0000185","M0290205"]
+Wind_name_list = ["中间价:美元兑人民币","USDCNH:即期汇率"]
+Total_data["RMB Exchange Rate"] = Convert_list_to_pre_json_data("人民币汇率",Wind_id_list,Wind_name_list)
+
+# 价格
+
+Wind_id_list =["M0000612","M0001227","M0001375"]
+Wind_name_list = ["CPI:当月同比","PPI:全部工业品:当月同比","CGPI:当月同比"]
+Total_data["CPI vs PPI"] = Convert_list_to_pre_json_data("CPI vs PPI",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0000612","M0000616","M0000613","M0085932","M0096666","M0000614","M0000615"]
+Wind_name_list = ["CPI:当月同比","CPI:食品:当月同比","CPI:非食品:当月同比","CPI:不包括食品和能源(核心CPI):当月同比","CPI:不包括鲜菜和鲜果:当月同比","CPI:消费品:当月同比","CPI:服务:当月同比"]
+Total_data["CPI"] = Convert_list_to_pre_json_data("CPI",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0001227","M0001228","M0001232"]
+Wind_name_list = ["PPI:全部工业品:当月同比","PPI:生产资料:当月同比","PPI:生活资料:当月同比"]
+Total_data["PPI"] = Convert_list_to_pre_json_data("PPI",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0001375","M0001376"]
+Wind_name_list = ["CGPI:当月同比","CGPI:农产品:当月同比"]
+Total_data["CGPI"] = Convert_list_to_pre_json_data("CGPI",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0043829","M0043949"]
+Wind_name_list = ["出口价格指数(HS2):总指数","进口价格指数(HS2):总指数"]
+Total_data["Trade Price Index"] = Convert_list_to_pre_json_data("进出口价格指数",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M5439528"]
+Wind_name_list = ["GDP:平减指数:GDP:初步核算:当季同比"]
+Total_data["GDP deflator"] = Convert_list_to_pre_json_data("GDP 平减指数",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["S2707425","S2707403","S2707411"]
+Wind_name_list = ["70个大中城市二手住宅价格指数:当月同比","70个大中城市新建住宅价格指数:当月同比","70个大中城市新建商品住宅价格指数:当月同比"]
+Total_data["70 Cities Home Price"] = Convert_list_to_pre_json_data("70城价格指数",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["S2707427","S2707428","S2707429"]
+Wind_name_list = ["70个大中城市二手住宅价格指数:一线城市:当月同比","70个大中城市二手住宅价格指数:二线城市:当月同比","70个大中城市二手住宅价格指数:三线城市:当月同比"]
+Total_data["70 Cities Home Price by Scale"] = Convert_list_to_pre_json_data("70城价格指数按规模划分",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["S2707445","S2707446","S2707447"]
+Wind_name_list = ["百城住宅价格指数:一线城市:同比","百城住宅价格指数:二线城市:同比","百城住宅价格指数:三线城市:同比"]
+Total_data["100 Cities Home Price Index by Scale"] = Convert_list_to_pre_json_data("百城住宅价格指数按规模划分",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["S2704485"]
+Wind_name_list = ["百城住宅价格指数:同比"]
+Total_data["100 Cities Home Price Index"] = Convert_list_to_pre_json_data("百城住宅价格指数同比",Wind_id_list,Wind_name_list)
+
+# 人口
+Wind_id_list = ["M0028615"]
+Wind_name_list = ["总人口"]
+Total_data["China Polulation"] = Convert_list_to_pre_json_data("总人口",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0013626","M0013633","M0013640","M0013647","M0013654","M0013661","M0013668","M0013675","M0013682",
+                "M0013689","M0013696","M0013703","M0013710","M0013717","M0013724","M0013731","M0013738","M0013745",
+                "M0013752","M0013759"]
+
+Wind_name_list = ["抽样数:占总人口比例:0-4岁","抽样数:占总人口比例:5-9岁","抽样数:占总人口比例:10-14岁",
+                  "抽样数:占总人口比例:15-19岁","抽样数:占总人口比例:20-24岁","抽样数:占总人口比例:25-29岁",
+                  "抽样数:占总人口比例:30-34岁","抽样数:占总人口比例:35-39岁","抽样数:占总人口比例:40-44岁",
+                  "抽样数:占总人口比例:45-49岁","抽样数:占总人口比例:50-54岁","抽样数:占总人口比例:55-59岁",
+                  "抽样数:占总人口比例:60-64岁","抽样数:占总人口比例:65-69岁","抽样数:占总人口比例:70-74岁",
+                  "抽样数:占总人口比例:75-79岁","抽样数:占总人口比例:80-84岁","抽样数:占总人口比例:85-89岁",
+                  "抽样数:占总人口比例:90-94岁","抽样数:占总人口比例:95岁以上"]
+Total_data["Population Structure"] = Convert_list_to_pre_json_data("人口结构",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M6096116"]
+Wind_name_list = ["城镇新增就业人数:累计同比"]
+Total_data["New Jobs"] = Convert_list_to_pre_json_data("新增就业人数",Wind_id_list,Wind_name_list)
+
+Wind_id_list = ["M0013626","M0013633","M0013640"]
+Wind_name_list = ["城镇调查失业率","就业人员调查失业率:25-59岁","31个大城市城镇调查失业率"]
+Total_data["Unemployment"] = Convert_list_to_pre_json_data("失业率",Wind_id_list,Wind_name_list)
+
+
+
+
 
 write_json_to_file("chart_data.json",Total_data)
 

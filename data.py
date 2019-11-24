@@ -187,10 +187,160 @@ name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"PMI NBS vs Caixin")
 line_PMI_NBS_vs_Caixin = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
 
 name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Fixed Asset Investment")
-line_fixed_asset_investment = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate)
+line_fixed_asset_investment = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
 
 name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Retail Sales of Consumer Goods")
-line_retail_sales_of_consumer_goods = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate)
+line_retail_sales_of_consumer_goods = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Real Estate Construction and Sales")
+line_real_estate_construction_and_sales = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Home Inventory")
+line_home_inventory = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Industry Capacity Utilizaiton")
+line_industry_capacity_utilization = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"SubIndustry Capacity Utilization")
+line_subindustry_capacity_utilization = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Industry Inventory")
+line_industry_inventory = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Industry Condition")
+line_industry_condition = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Industry Profit")
+line_industry_profit = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Citizen Income")
+line_citizen_income = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Migrant Worker")
+line_migrant_worker = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Per Capita Disposable Income of Urban Resident")
+line_per_capita_disposable_income_of_urban_resident = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Import and Export Trade")
+line_import_export_trade = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Trade Surplus")
+line_trade_surplus = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Export Goods Value of Industry")
+line_export_goods_value_of_industry = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"International Goods and Service Trade")
+line_international_goods_service_trade = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"FDI")
+line_FDI = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Domestic Direct Investment")
+line_domestic_direct_investment = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Current and Capital Account")
+line_current_and_captial_account = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Foreign Currency Reserve")
+line_foregin_currency_reserve = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Gold Reserve")
+line_gold_reserve = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Position for Forex Purchase")
+line_position_for_forex_purchase = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Foreign Debt")
+line_foreign_debt = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Debt Structure")
+line_debt_structure = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Growth of Govt Revenue")
+line_growth_of_govt_revenue = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Fiscal Deposit")
+line_fiscal_deposit = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Local Govt Debt")
+line_local_govt_debt = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"M0 M1 M2")
+line_m0_m1_m2 = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Curreny and Cash")
+line_currency_and_cash = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Financing Scale")
+line_financing_scale = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Open Market Operation")
+line_open_market_operation = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"MLF Volume")
+line_mlf_volume = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"MLF Price")
+line_mlf_price = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"PSL")
+line_psl = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Repo")
+line_repo = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Shibor")
+line_shibor = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Loan Interest Rate")
+line_loan_interest_rate = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"yuebao")
+line_yuebao = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"RMB Exchange Rate")
+line_rmb_exchange_rate = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"CPI vs PPI")
+line_cpi_vs_ppi = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"CPI")
+line_cpi = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"PPI")
+line_ppi = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"CGPI")
+line_cgpi = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Trade Price Index")
+line_trade_price_index = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"GDP deflator")
+line_gdp_deflator = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"70 Cities Home Price")
+line_70_cities_home_price = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"70 Cities Home Price by Scale")
+line_70_cities_home_price_by_scale = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"100 Cities Home Price Index")
+line_100_cities_home_price_index = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"100 Cities Home Price Index by Scale")
+line_100_cities_home_price_index_by_scale = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"China Polulation")
+line_china_population = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"New Jobs")
+line_new_jobs = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
+
+name_temp,id_temp,str_temp = read_json_txt_to_list(json_txt,"Unemployment")
+line_unemployment = plot_mutiple_line_from_wind(id_temp,name_temp,str_temp,"1992-01-01",enddate,is_show=False)
 
 
 
@@ -202,7 +352,16 @@ page = (
          line_liquidity_medium_watch,line_liquidity_expectation,line_china_treasury,line_term_spread,line_china_treasury_localgov_spread,line_china_credit_spread_line,line_china_credit_spread_1Y_line,
          line_china_GDP_NoChange,line_china_GDP_yoy,line_china_GDP_multiplie_industry_yoy,line_industry_production_yoy,
          line_service_industry_yoy,line_PMI,line_PMI_by_size,line_PMI_non_manufacturing,line_Caixin_PMI,line_PMI_NBS_vs_Caixin,
-         line_fixed_asset_investment,line_retail_sales_of_consumer_goods)
+         line_fixed_asset_investment,line_retail_sales_of_consumer_goods,line_real_estate_construction_and_sales,line_home_inventory,
+         line_industry_capacity_utilization,line_subindustry_capacity_utilization,line_industry_inventory,line_industry_condition,
+         line_industry_profit,line_citizen_income,line_migrant_worker,line_per_capita_disposable_income_of_urban_resident,
+         line_import_export_trade,line_trade_surplus,line_export_goods_value_of_industry,line_international_goods_service_trade,
+         line_FDI,line_domestic_direct_investment,line_current_and_captial_account,line_gold_reserve,line_position_for_forex_purchase,
+         line_foreign_debt,line_debt_structure,line_growth_of_govt_revenue,line_fiscal_deposit,line_local_govt_debt,line_m0_m1_m2,
+         line_currency_and_cash,line_financing_scale,line_open_market_operation,line_mlf_price,line_mlf_volume,line_psl,
+         line_repo,line_shibor,line_loan_interest_rate,line_yuebao,line_rmb_exchange_rate,line_cpi_vs_ppi,line_cpi,line_ppi,
+         line_cgpi,line_trade_price_index,line_gdp_deflator,line_70_cities_home_price,line_70_cities_home_price_by_scale,
+         line_100_cities_home_price_index,line_100_cities_home_price_index_by_scale,line_china_population,line_new_jobs,line_unemployment)
 )
 
 
